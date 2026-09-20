@@ -1,0 +1,100 @@
+[
+  {
+    "species": "넙치",
+    "habitat": "8~26",
+    "optimal": "20~25",
+    "low": 4,
+    "high": 29
+  },
+  {
+    "species": "조피볼락",
+    "habitat": "7~26",
+    "optimal": "12~21",
+    "low": 3,
+    "high": 28
+  },
+  {
+    "species": "숭어",
+    "habitat": "1~31",
+    "optimal": "17~27",
+    "low": 1,
+    "high": 31
+  },
+  {
+    "species": "참돔",
+    "habitat": "10~30",
+    "optimal": "20~28",
+    "low": 6.5,
+    "high": 31
+  },
+  {
+    "species": "강도다리",
+    "habitat": "3~23",
+    "optimal": "14~17",
+    "low": 0,
+    "high": 27
+  },
+  {
+    "species": "농어",
+    "habitat": "7~30",
+    "optimal": "15~19",
+    "low": 3.5,
+    "high": 31
+  },
+  {
+    "species": "방어",
+    "habitat": "18~29",
+    "optimal": "24~28",
+    "low": 7,
+    "high": 31
+  },
+  {
+    "species": "말쥐치",
+    "habitat": "10~30",
+    "optimal": "15~28",
+    "low": 8,
+    "high": 30
+  },
+  {
+    "species": "돌돔",
+    "habitat": "7~30",
+    "optimal": "23~26",
+    "low": 6.5,
+    "high": 31
+  },
+  {
+    "species": "감성돔",
+    "habitat": "10~30",
+    "optimal": "20~28",
+    "low": 6.5,
+    "high": 31
+  },
+  {
+    "species": "자주복",
+    "habitat": "10~28",
+    "optimal": "16~23",
+    "low": 4,
+    "high": 28
+  },
+  {
+    "species": "멍게",
+    "habitat": "5~24",
+    "optimal": "10~16",
+    "low": 2,
+    "high": 26
+  },
+  {
+    "species": "참전복",
+    "habitat": "10~20",
+    "optimal": "15~18",
+    "low": 5,
+    "high": 28
+  },
+  {
+    "species": "굴",
+    "habitat": "0~35",
+    "optimal": "20~25",
+    "low": null,
+    "high": 37
+  }
+]

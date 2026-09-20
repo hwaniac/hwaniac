@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hwaniac 양식장 수온 안전 대시보드</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">HWANIAC <span>양식장 수온 안전 대시보드</span></div>
+  <nav id="tabs" class="tabs">
+    <button class="tab active" data-tab="map">양식장 지도</button>
+    <button class="tab" data-tab="limits">한계수온</button>
+    <button class="tab" data-tab="about">데이터 안내</button>
+  </nav>
+  <div class="updated" id="updated">실시간 수온 준비 중</div>
+</header>
+
+<main>
+<section id="mapView" class="view active">
+  <div class="dashboard">
+    <aside class="panel left">
+      <div class="panel-head">
+        <h2>양식장 현황</h2>
+        <span id="farmCount">-</span>
+      </div>
+      <div class="field-row">
+        <input id="search" type="search" placeholder="면허번호·양식물·주소 검색">
+        <button id="searchBtn">검색</button>
+      </div>
+      <div class="field-row two">
+        <select id="province"><option value="">전체 시·도</option></select>
+        <select id="species"><option value="">전체 양식물</option></select>
+      </div>
+      <div class="signal-legend">
+        <div><i class="dot green"></i> 안전</div>
+        <div><i class="dot yellow"></i> 주의</div>
+        <div><i class="dot red"></i> 위험</div>
+        <div><i class="dot gray"></i> 수온/한계값 없음</div>
+      </div>
+      <div id="list" class="list"></div>
+    </aside>
+    <div id="map"></div>
+    <aside class="panel right" id="detail">
+      <div class="empty">
+        <div class="big">양식장을 선택하세요</div>
+        <p>지도에서 양식장 마커를 클릭하면 면허정보, 최근 실시간 수온, 한계수온, 안전상태를 확인할 수 있습니다.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="limitsView" class="view">
+  <div class="wide-panel">
+    <div class="panel-head">
+      <div>
+        <h2>주요 양식품종 한계수온</h2>
+        <p class="sub">첨부하신 자료를 기준으로 구성한 비교표입니다.</p>
+      </div>
+      <input id="limitSearch" type="search" placeholder="품종 검색">
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>품종</th><th>서식수온</th><th>적정수온</th><th>저온 한계</th><th>고온 한계</th></tr></thead>
+        <tbody id="limitsTable"></tbody>
+      </table>
+    </div>
+    <p class="note">한계수온은 수온별 노출기간, 어체크기, 건강상태, 사료섭취 및 사육환경 등에 따라 달라질 수 있습니다.</p>
+  </div>
+</section>
+
+<section id="aboutView" class="view">
+  <div class="wide-panel">
+    <h2>데이터 구성</h2>
+    <div class="cards">
+      <div class="info-card"><b>면허정보</b><span>업로드한 Excel의 면허정보·좌표정보를 사용합니다.</span></div>
+      <div class="info-card"><b>실시간 수온</b><span>국립수산과학원 실시간 해양수산환경 관측시스템의 관측자료를 사용합니다.</span></div>
+      <div class="info-card"><b>매칭 방법</b><span>각 양식장 위치와 가장 가까운 사용중 관측소의 표층 수온을 연결합니다.</span></div>
+      <div class="info-card"><b>신호등</b><span>기본안은 안전=녹색, 한계 ±2℃ 이내=노랑, 한계 초과=빨강입니다. 이 기준은 화면용 운영규칙으로 조정 가능합니다.</span></div>
+    </div>
+    <div class="api-box">
+      <b>실시간 API 업데이트</b>
+      <p>GitHub Actions가 NIFS API를 주기적으로 조회하여 <code>data/risa-latest.json</code>을 갱신하도록 구성합니다. API 인증키는 공개 코드에 넣지 않고 GitHub Actions Secret에 저장합니다.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
