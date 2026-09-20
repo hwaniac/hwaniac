@@ -36,3 +36,29 @@ async function load(){const [lic,lim,risa,stations]=await Promise.all([fetch(LIC
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');const tab=b.dataset.tab;document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));const ids={map:'mapView',stats:'statsView',stations:'stationsView',limits:'limitsView',about:'aboutView'};document.getElementById(ids[tab]||'mapView').classList.add('active');setTimeout(()=>{state.map?.invalidateSize();state.stationMap?.invalidateSize();},80);});
 ['search','province','species'].forEach(id=>document.getElementById(id).addEventListener(id==='search'?'input':'change',renderList));document.getElementById('searchBtn').onclick=renderList;document.getElementById('limitSearch').addEventListener('input',renderLimits);['statsProvince','statsSpecies','statsStatus'].forEach(id=>document.getElementById(id).addEventListener(id==='statsSpecies'?'input':'change',renderStats));['stationOrg','stationSea'].forEach(id=>document.getElementById(id).addEventListener('change',renderStationNetwork));document.getElementById('stationSearch').addEventListener('input',renderStationNetwork);
 load().catch(err=>{console.error(err);document.getElementById('updated').textContent='데이터 로드 오류';});
+
+// v8: panel collapse / mobile controls
+(function initResponsivePanels(){
+  const dash=document.querySelector('.dashboard');
+  const stationDash=document.querySelector('.station-dashboard');
+  const farmPanel=document.getElementById('farmPanel');
+  const detail=document.getElementById('detail');
+  const stationPanel=document.getElementById('stationPanel');
+  const tabs=document.getElementById('tabs');
+  const isMobile=()=>window.matchMedia('(max-width:720px)').matches;
+  const resizeMaps=()=>setTimeout(()=>{state.map?.invalidateSize();state.stationMap?.invalidateSize();},240);
+  function closeMobilePanels(){farmPanel?.classList.remove('mobile-open');detail?.classList.remove('open');stationPanel?.classList.remove('mobile-open');}
+  document.getElementById('farmPanelToggle')?.addEventListener('click',()=>{if(isMobile()) farmPanel.classList.remove('mobile-open'); else dash.classList.add('farm-collapsed');resizeMaps();});
+  document.getElementById('farmPanelOpen')?.addEventListener('click',()=>{dash.classList.remove('farm-collapsed');resizeMaps();});
+  document.getElementById('detailPanelToggle')?.addEventListener('click',()=>{detail.classList.remove('open');if(!isMobile()) dash.classList.add('detail-collapsed');resizeMaps();});
+  document.getElementById('detailPanelOpen')?.addEventListener('click',()=>{dash.classList.remove('detail-collapsed');detail.classList.add('open');resizeMaps();});
+  document.getElementById('stationPanelToggle')?.addEventListener('click',()=>{if(isMobile()) stationPanel.classList.remove('mobile-open'); else stationDash.classList.add('list-collapsed');resizeMaps();});
+  document.getElementById('stationPanelOpen')?.addEventListener('click',()=>{if(isMobile()) stationPanel.classList.add('mobile-open'); else stationDash.classList.remove('list-collapsed');resizeMaps();});
+  document.getElementById('mobileFarmBtn')?.addEventListener('click',()=>{farmPanel.classList.toggle('mobile-open');detail.classList.remove('open');});
+  document.getElementById('mobileDetailBtn')?.addEventListener('click',()=>{detail.classList.toggle('open');farmPanel.classList.remove('mobile-open');});
+  document.getElementById('mobileMenuBtn')?.addEventListener('click',()=>tabs.classList.toggle('mobile-open'));
+  document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{tabs.classList.remove('mobile-open');if(isMobile())closeMobilePanels();}));
+  window.addEventListener('resize',resizeMaps);
+  // Mobile starts map-first: side panels remain hidden until requested.
+  if(isMobile()) closeMobilePanels();
+})();

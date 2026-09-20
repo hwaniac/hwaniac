@@ -11,6 +11,7 @@
 </head>
 <body>
 <header class="topbar">
+  <button id="mobileMenuBtn" class="mobile-menu-btn" type="button" aria-label="메뉴 열기">☰</button>
   <div class="brand">HWANIAC <span>양식장 수온 안전 대시보드</span></div>
   <nav id="tabs" class="tabs">
     <button class="tab active" data-tab="map">양식장 지도</button>
@@ -25,7 +26,8 @@
 <main>
 <section id="mapView" class="view active">
   <div class="dashboard">
-    <aside class="panel left">
+    <aside class="panel left" id="farmPanel">
+      <button class="panel-toggle left-toggle" id="farmPanelToggle" type="button" title="양식장 목록 접기">‹</button>
       <div class="panel-head">
         <h2>양식장 현황</h2>
         <span id="farmCount">-</span>
@@ -47,13 +49,17 @@
       </div>
       <div id="list" class="list"></div>
     </aside>
+    <button id="farmPanelOpen" class="edge-open left-edge" type="button">☰ 양식장</button>
     <div id="map"></div>
     <aside class="panel right" id="detail">
+      <button class="panel-toggle right-toggle" id="detailPanelToggle" type="button" title="상세정보 접기">›</button>
       <div class="empty">
         <div class="big">양식장을 선택하세요</div>
         <p>지도에서 양식장 마커를 클릭하면 면허정보, 최근 실시간 수온, 한계수온, 안전상태를 확인할 수 있습니다.</p>
       </div>
     </aside>
+    <button id="detailPanelOpen" class="edge-open right-edge" type="button">상세정보</button>
+    <div class="mobile-map-actions"><button id="mobileFarmBtn" type="button">☰ 양식장</button><button id="mobileDetailBtn" type="button">상세정보</button></div>
   </div>
 </section>
 
@@ -82,12 +88,14 @@
 
 <section id="stationsView" class="view">
   <div class="station-dashboard">
-    <aside class="station-list-panel">
+    <aside class="station-list-panel" id="stationPanel">
+      <button class="panel-toggle left-toggle" id="stationPanelToggle" type="button" title="관측소 목록 접기">‹</button>
       <div class="panel-head"><div><h2>통합 수온관측망</h2><p class="sub">NIFS 통합망의 표층수온 관측소 위치와 최신 관측상태</p></div><span id="stationCount">-</span></div>
       <div class="station-summary" id="stationSummary"></div>
       <div class="station-filters"><select id="stationOrg"><option value="">전체 운영기관</option></select><select id="stationSea"><option value="">전체 해역</option></select><input id="stationSearch" type="search" placeholder="관측소 검색"></div>
       <div class="station-list" id="stationList"></div>
     </aside>
+    <button id="stationPanelOpen" class="edge-open left-edge station-edge" type="button">☰ 관측소</button>
     <div id="stationMap"></div>
   </div>
 </section>
