@@ -36,11 +36,12 @@
         <select id="province"><option value="">전체 시·도</option></select>
         <select id="species"><option value="">전체 양식물</option></select>
       </div>
+      <div id="summary" class="summary-strip"></div>
       <div class="signal-legend">
         <div><i class="dot green"></i> 안전</div>
         <div><i class="dot yellow"></i> 주의</div>
         <div><i class="dot red"></i> 위험</div>
-        <div><i class="dot gray"></i> 수온/한계값 없음</div>
+        <div><i class="dot gray"></i> 수온/한계값 없음·관측 지연</div>
       </div>
       <div id="list" class="list"></div>
     </aside>
@@ -79,8 +80,8 @@
     <div class="cards">
       <div class="info-card"><b>면허정보</b><span>업로드한 Excel의 면허정보·좌표정보를 사용합니다.</span></div>
       <div class="info-card"><b>실시간 수온</b><span>국립수산과학원 실시간 해양수산환경 관측시스템의 관측자료를 사용합니다.</span></div>
-      <div class="info-card"><b>매칭 방법</b><span>각 양식장 위치와 가장 가까운 사용중 관측소의 표층 수온을 연결합니다.</span></div>
-      <div class="info-card"><b>신호등</b><span>기본안은 안전=녹색, 한계 ±2℃ 이내=노랑, 한계 초과=빨강입니다. 이 기준은 화면용 운영규칙으로 조정 가능합니다.</span></div>
+      <div class="info-card"><b>매칭 방법</b><span>각 양식장 좌표와 가장 가까운 NIFS 관측소의 표층 수온을 연결하고 관측소까지 거리를 표시합니다.</span></div>
+      <div class="info-card"><b>신호등</b><span>운영 화면용 임시 규칙: 한계 초과=빨강, 한계까지 2℃ 이내=노랑, 그 외=녹색입니다. 3시간 이상 갱신되지 않은 관측자료와 한계수온이 없는 품종은 회색으로 표시합니다. 이 규칙은 공식 경보 기준이 아니며 조정 가능합니다.</span></div>
     </div>
     <div class="api-box">
       <b>실시간 API 업데이트</b>
