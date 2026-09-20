@@ -82,4 +82,6 @@ stations.sort(key=lambda x:(x.get('stationName') or '',x['stationCode']))
 meta={'source':'NIFS Real-time Marine Fisheries Environment Observation System','generatedAtUTC':datetime.now(timezone.utc).isoformat(),'layer':'surface (obs_lay=1)','qualityNotice':'Real-time observation data may not have undergone final quality control.'}
 (OUT/'risa-stations.json').write_text(json.dumps({'meta':meta,'count':len(stations),'stations':stations},ensure_ascii=False,indent=2),encoding='utf-8')
 (OUT/'risa-latest.json').write_text(json.dumps({'meta':meta,'count':len(latest),'observations':latest},ensure_ascii=False,indent=2),encoding='utf-8')
+print(f'risaCode raw Item count = {len(items(stations_raw))}')
+print(f'risaList raw Item count = {len(items(obs_raw))}')
 print(f'Wrote {len(stations)} stations and {len(latest)} latest surface observations')
