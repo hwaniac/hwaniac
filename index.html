@@ -60,12 +60,23 @@
 
 <section id="statsView" class="view">
   <div class="wide-panel stats-page">
-    <div class="panel-head stats-head"><div><h2>시도별 · 양식물별 현황</h2><p class="sub">전체 면허자료를 집계해 지역과 양식물 분포를 한눈에 보여줍니다. 행을 클릭하면 양식장 지도 필터로 이동합니다.</p></div></div>
-    <div class="stats-kpis" id="statsKpis"></div>
-    <div class="stats-grid">
-      <section class="stats-card"><div class="stats-title"><h3>시도별 현황</h3><span id="provinceStatsCount"></span></div><div class="bar-list" id="provinceStats"></div></section>
-      <section class="stats-card"><div class="stats-title"><h3>양식물별 현황</h3><span id="speciesStatsCount"></span></div><div class="bar-list" id="speciesStats"></div></section>
+    <div class="panel-head stats-head">
+      <div><h2>시도별 · 양식품종별 한계수온 현황</h2><p class="sub">각 시도의 모든 양식품종을 펼쳐서 현재 적용수온과 한계수온, 안전상태를 함께 보여줍니다.</p></div>
     </div>
+    <div class="stats-kpis" id="statsKpis"></div>
+    <div class="stats-toolbar">
+      <select id="statsProvince"><option value="">전체 시·도</option></select>
+      <input id="statsSpecies" type="search" placeholder="양식품종 검색">
+      <select id="statsStatus"><option value="">전체 상태</option><option value="green">안전</option><option value="yellow">주의</option><option value="red">위험</option><option value="gray">미판정</option></select>
+      <span id="statsRowCount"></span>
+    </div>
+    <div class="table-wrap stats-table-wrap">
+      <table class="stats-table">
+        <thead><tr><th>시도</th><th>양식품종</th><th>양식장 수</th><th>현재 적용수온 평균</th><th>적정수온</th><th>저온 한계</th><th>고온 한계</th><th>안전</th><th>주의</th><th>위험</th><th>미판정</th></tr></thead>
+        <tbody id="provinceSpeciesTable"></tbody>
+      </table>
+    </div>
+    <p class="note">현재 적용수온 평균은 각 양식장에 가장 가까운 NIFS 관측소의 이용 가능한 표층수온을 연결한 뒤 평균한 값입니다. 오래된 관측값도 값이 존재하면 사용하며 관측시각을 함께 확인할 수 있습니다. 표의 행을 클릭하면 해당 시도·품종으로 양식장 지도가 필터링됩니다.</p>
   </div>
 </section>
 
@@ -106,7 +117,7 @@
       <div class="info-card"><b>면허정보</b><span>업로드한 Excel의 면허정보·좌표정보를 사용합니다.</span></div>
       <div class="info-card"><b>실시간 수온</b><span>국립수산과학원 실시간 해양수산환경 관측시스템의 관측자료를 사용합니다.</span></div>
       <div class="info-card"><b>매칭 방법</b><span>각 양식장 좌표와 가장 가까운 NIFS 관측소의 표층 수온을 연결하고 관측소까지 거리를 표시합니다.</span></div>
-      <div class="info-card"><b>신호등</b><span>운영 화면용 임시 규칙: 한계 초과=빨강, 한계까지 2℃ 이내=노랑, 그 외=녹색입니다. 3시간 이상 갱신되지 않은 관측자료와 한계수온이 없는 품종은 회색으로 표시합니다. 이 규칙은 공식 경보 기준이 아니며 조정 가능합니다.</span></div>
+      <div class="info-card"><b>신호등</b><span>운영 화면용 임시 규칙: 한계 초과=빨강, 한계까지 2℃ 이내=노랑, 그 외=녹색입니다. 관측값이 존재하면 관측시각과 관계없이 가장 가까운 관측소 값을 사용합니다. 한계수온이 없는 품종은 회색으로 표시합니다. 이 규칙은 공식 경보 기준이 아니며 조정 가능합니다.</span></div>
     </div>
     <div class="api-box">
       <b>실시간 API 업데이트</b>
