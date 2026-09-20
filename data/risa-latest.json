@@ -1,6 +1,1 @@
-{
-  "updatedAt": null,
-  "source": "국립수산과학원 실시간 해양수산환경 관측시스템",
-  "note": "NIFS API 30분 주기. 실시간 원자료는 최종 품질관리 미적용.",
-  "stations": []
-}
+{"meta":{"status":"waiting-for-first-github-action-run"},"count":0,"observations":[]}
