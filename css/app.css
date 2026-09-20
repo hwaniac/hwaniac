@@ -21,3 +21,9 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
 @media(max-width:1050px){.dashboard{grid-template-columns:310px minmax(0,1fr)}.panel.right{position:absolute;right:0;top:56px;height:calc(100vh - 56px);width:340px;z-index:900;transform:translateX(100%);transition:.25s}.panel.right.open{transform:translateX(0)}}
 @media(max-width:720px){.brand span{display:none}.updated{display:none}.dashboard{grid-template-columns:1fr}.panel.left{position:absolute;left:8px;top:64px;width:min(340px,calc(100vw - 16px));height:calc(100vh - 76px);z-index:900;border:1px solid var(--line);border-radius:12px}.map{height:100%}.tabs{margin-left:auto}.tab{padding:0 9px;font-size:12px}}
 .summary-strip{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin:8px 0 10px}.summary-strip span{background:#101827;border:1px solid #283447;border-radius:8px;padding:7px 8px;font-size:12px;text-align:center}.note.warn{color:#ffd166;background:#2b2412;border:1px solid #665522;border-radius:8px;padding:10px}
+/* v4 */
+#map .leaflet-tile-pane{filter:brightness(.72) saturate(.65) contrast(1.08)}
+.station-marker{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#35a7ff;color:#fff;border:2px solid #d9f1ff;box-shadow:0 0 0 3px rgba(53,167,255,.22);font-size:11px}
+.station-marker.stale{background:#697886;border-color:#c0c8cf;opacity:.7}
+.leaflet-control-layers{font-size:11px}
+.summary-strip span b{font-size:13px;margin-left:4px}
