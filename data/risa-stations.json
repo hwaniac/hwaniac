@@ -1,1 +1,421 @@
-{"meta":{"status":"waiting-for-first-github-action-run"},"count":0,"stations":[]}
+{
+  "meta": {
+    "source": "NIFS Real-time Marine Fisheries Environment Observation System",
+    "generatedAtUTC": "2026-09-20T06:55:08.906812+00:00",
+    "layer": "surface (obs_lay=1)",
+    "qualityNotice": "Real-time observation data may not have undergone final quality control."
+  },
+  "count": 41,
+  "stations": [
+    {
+      "stationCode": "bgna3",
+      "stationName": "강릉",
+      "seaArea": "동해",
+      "lat": 37.799,
+      "lon": 128.9492,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "강원도 강릉시 사천면 사천항"
+    },
+    {
+      "stationCode": "fgg4c",
+      "stationName": "거제 가배",
+      "seaArea": "남해",
+      "lat": 34.7851,
+      "lon": 128.5664,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "경남 거제시 동부면 가배리 해바라기수산"
+    },
+    {
+      "stationCode": "gi086",
+      "stationName": "거제 일운",
+      "seaArea": "남해",
+      "lat": 34.8038,
+      "lon": 128.7094,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "거제 일운"
+    },
+    {
+      "stationCode": "fggo3",
+      "stationName": "고성 가진",
+      "seaArea": "동해",
+      "lat": 38.3681,
+      "lon": 128.5239,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": ""
+    },
+    {
+      "stationCode": "fgsj3",
+      "stationName": "고흥 소록도",
+      "seaArea": "남해",
+      "lat": 34.5049,
+      "lon": 127.1228,
+      "surfaceDepthM": 3.0,
+      "surfaceTempAvailable": "Y",
+      "description": ""
+    },
+    {
+      "stationCode": "fghe8",
+      "stationName": "구룡포 하정",
+      "seaArea": "동해",
+      "lat": 35.9607,
+      "lon": 129.5497,
+      "surfaceDepthM": 3.0,
+      "surfaceTempAvailable": "Y",
+      "description": "포항 구룡포 하정 양식장"
+    },
+    {
+      "stationCode": "egsi4",
+      "stationName": "군산 신시도",
+      "seaArea": "서해",
+      "lat": 35.8168,
+      "lon": 126.4422,
+      "surfaceDepthM": 2.0,
+      "surfaceTempAvailable": "Y",
+      "description": ""
+    },
+    {
+      "stationCode": "bgj8a",
+      "stationName": "기장",
+      "seaArea": "동해",
+      "lat": 35.187,
+      "lon": 129.227,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": ""
+    },
+    {
+      "stationCode": "eng5c",
+      "stationName": "남해 강진",
+      "seaArea": "남해",
+      "lat": 34.8746,
+      "lon": 127.9522,
+      "surfaceDepthM": 3.0,
+      "surfaceTempAvailable": "Y",
+      "description": "경상남도 남해군 이동면 양식장 바지선"
+    },
+    {
+      "stationCode": "fnm5b",
+      "stationName": "남해 미조",
+      "seaArea": "남해",
+      "lat": 34.7255,
+      "lon": 128.0497,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "경남 남해군 미조면"
+    },
+    {
+      "stationCode": "emp67",
+      "stationName": "목포",
+      "seaArea": "서해",
+      "lat": 34.7892,
+      "lon": 126.3653,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "전라남도 목포시 죽교동 571-2번지"
+    },
+    {
+      "stationCode": "fbn69",
+      "stationName": "백령도",
+      "seaArea": "서해",
+      "lat": 37.9505,
+      "lon": 124.7295,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "인천광역시 옹진군 백령도"
+    },
+    {
+      "stationCode": "fbsp5",
+      "stationName": "보령 소도",
+      "seaArea": "서해",
+      "lat": 36.3969,
+      "lon": 126.4328,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": ""
+    },
+    {
+      "stationCode": "bsc87",
+      "stationName": "삼척",
+      "seaArea": "동해",
+      "lat": 37.3023,
+      "lon": 129.3127,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "강원도 삼척시 근덕면 장호항"
+    },
+    {
+      "stationCode": "sj086",
+      "stationName": "서산 지곡",
+      "seaArea": "서해",
+      "lat": 36.8935,
+      "lon": 126.3524,
+      "surfaceDepthM": 3.0,
+      "surfaceTempAvailable": "Y",
+      "description": "서산 지곡"
+    },
+    {
+      "stationCode": "fsch6",
+      "stationName": "서산 창리",
+      "seaArea": "서해",
+      "lat": 36.6163,
+      "lon": 126.3717,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "충남 서산시 부석면 창리"
+    },
+    {
+      "stationCode": "ejj47",
+      "stationName": "서제주",
+      "seaArea": "남해",
+      "lat": 33.3104,
+      "lon": 126.164,
+      "surfaceDepthM": 2.0,
+      "surfaceTempAvailable": "Y",
+      "description": "제주시 북제주군 한경면 고산리 차귀도잠수함"
+    },
+    {
+      "stationCode": "byy87",
+      "stationName": "양양",
+      "seaArea": "동해",
+      "lat": 38.0808,
+      "lon": 128.6998,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "강원도 양양군 수산항"
+    },
+    {
+      "stationCode": "km001",
+      "stationName": "여수 신월",
+      "seaArea": "남해",
+      "lat": 34.687,
+      "lon": 127.708,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "전남 여수시 가막만 지선"
+    },
+    {
+      "stationCode": "byd8a",
+      "stationName": "영덕",
+      "seaArea": "동해",
+      "lat": 36.5737,
+      "lon": 129.437,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": ""
+    },
+    {
+      "stationCode": "fwgf1",
+      "stationName": "완도 가교",
+      "seaArea": "남해",
+      "lat": 34.4347,
+      "lon": 126.8083,
+      "surfaceDepthM": 2.0,
+      "surfaceTempAvailable": "Y",
+      "description": "완도 가교\n완도군청 설치."
+    },
+    {
+      "stationCode": "fwyo5",
+      "stationName": "완도 감목",
+      "seaArea": "남해",
+      "lat": 34.342,
+      "lon": 127.0101,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": ""
+    },
+    {
+      "stationCode": "wk094",
+      "stationName": "완도 금일",
+      "seaArea": "남해",
+      "lat": 34.3786,
+      "lon": 127.0654,
+      "surfaceDepthM": 3.5,
+      "surfaceTempAvailable": "Y",
+      "description": "전남 완도군 금일읍 충동리"
+    },
+    {
+      "stationCode": "wn087",
+      "stationName": "완도 노화도",
+      "seaArea": "남해",
+      "lat": 34.2214,
+      "lon": 126.5414,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "완도 노화도"
+    },
+    {
+      "stationCode": "fwdo5",
+      "stationName": "완도 대창",
+      "seaArea": "남해",
+      "lat": 34.3825,
+      "lon": 126.7364,
+      "surfaceDepthM": 3.0,
+      "surfaceTempAvailable": "Y",
+      "description": ""
+    },
+    {
+      "stationCode": "fwdf1",
+      "stationName": "완도 동백",
+      "seaArea": "남해",
+      "lat": 34.3275,
+      "lon": 127.035,
+      "surfaceDepthM": 2.0,
+      "surfaceTempAvailable": "Y",
+      "description": "완도 동백\n완도군청 설치."
+    },
+    {
+      "stationCode": "fwmg3",
+      "stationName": "완도 망남",
+      "seaArea": "남해",
+      "lat": 34.3013,
+      "lon": 126.768,
+      "surfaceDepthM": 2.0,
+      "surfaceTempAvailable": "Y",
+      "description": "전라남도 완도군\n완도군청 설치"
+    },
+    {
+      "stationCode": "fwbf1",
+      "stationName": "완도 백도",
+      "seaArea": "남해",
+      "lat": 34.1636,
+      "lon": 126.6269,
+      "surfaceDepthM": 2.0,
+      "surfaceTempAvailable": "Y",
+      "description": "완도 백도\n완도군청 설치."
+    },
+    {
+      "stationCode": "fwso5",
+      "stationName": "완도 사동",
+      "seaArea": "남해",
+      "lat": 34.3373,
+      "lon": 127.0837,
+      "surfaceDepthM": 3.0,
+      "surfaceTempAvailable": "Y",
+      "description": ""
+    },
+    {
+      "stationCode": "fwih6",
+      "stationName": "완도 일정",
+      "seaArea": "남해",
+      "lat": 34.3674,
+      "lon": 126.9941,
+      "surfaceDepthM": 2.5,
+      "surfaceTempAvailable": "Y",
+      "description": "완도군 금일읍 일정리"
+    },
+    {
+      "stationCode": "wc001",
+      "stationName": "완도 청산",
+      "seaArea": "남해",
+      "lat": 34.1698,
+      "lon": 126.8547,
+      "surfaceDepthM": 3.0,
+      "surfaceTempAvailable": "Y",
+      "description": "전라남도 완도군 청산면 도락리"
+    },
+    {
+      "stationCode": "br001",
+      "stationName": "태안 고남",
+      "seaArea": "서해",
+      "lat": 36.4158,
+      "lon": 126.4333,
+      "surfaceDepthM": 3.0,
+      "surfaceTempAvailable": "Y",
+      "description": "관측소 위치에 맞는 이름현행화를 위하여 [보령 효자도]를 [태안 고남]으로 변경합니다."
+    },
+    {
+      "stationCode": "ftdk5",
+      "stationName": "태안 대야도",
+      "seaArea": "서해",
+      "lat": 36.4808,
+      "lon": 126.4202,
+      "surfaceDepthM": 6.0,
+      "surfaceTempAvailable": "Y",
+      "description": "태안군청 신규관측소"
+    },
+    {
+      "stationCode": "ftpk5",
+      "stationName": "태안 파도리",
+      "seaArea": "서해",
+      "lat": 36.7123,
+      "lon": 126.147,
+      "surfaceDepthM": 1.5,
+      "surfaceTempAvailable": "Y",
+      "description": "태안군청 신규관측소"
+    },
+    {
+      "stationCode": "tb087",
+      "stationName": "통영 비산도",
+      "seaArea": "남해",
+      "lat": 34.8082,
+      "lon": 128.4951,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "통영 비산도"
+    },
+    {
+      "stationCode": "ty005",
+      "stationName": "통영 사량",
+      "seaArea": "남해",
+      "lat": 34.8022,
+      "lon": 128.2463,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "경상남도 통영시 사량면 양지리"
+    },
+    {
+      "stationCode": "ftsj3",
+      "stationName": "통영 수월",
+      "seaArea": "남해",
+      "lat": 34.8222,
+      "lon": 128.345,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": ""
+    },
+    {
+      "stationCode": "ty004",
+      "stationName": "통영 영운",
+      "seaArea": "남해",
+      "lat": 34.7904,
+      "lon": 128.4293,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "경남 통영시 산양면 영운리 양식환경연구소 ..."
+    },
+    {
+      "stationCode": "ftp4c",
+      "stationName": "통영 풍화",
+      "seaArea": "남해",
+      "lat": 34.8348,
+      "lon": 128.3353,
+      "surfaceDepthM": 4.0,
+      "surfaceTempAvailable": "Y",
+      "description": "통영시 산양읍 풍화리 경은수산"
+    },
+    {
+      "stationCode": "fth59",
+      "stationName": "통영 학림",
+      "seaArea": "남해",
+      "lat": 34.7498,
+      "lon": 128.4151,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "경남 통영시 산양읍 저림리 성지수산"
+    },
+    {
+      "stationCode": "fjh5a",
+      "stationName": "해남 임하",
+      "seaArea": "서해",
+      "lat": 34.6069,
+      "lon": 126.2672,
+      "surfaceDepthM": 5.0,
+      "surfaceTempAvailable": "Y",
+      "description": "관측소 위치에 맞는 이름현행화를 위하여 [진도 회동]을 [해남 임하]로 관측소명을 변경합니다."
+    }
+  ]
+}
