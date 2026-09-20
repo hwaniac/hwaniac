@@ -43,7 +43,7 @@
         <div><i class="dot green"></i> 안전</div>
         <div><i class="dot yellow"></i> 주의</div>
         <div><i class="dot red"></i> 위험</div>
-        <div><i class="dot gray"></i> 수온/한계값 없음·관측 지연</div>
+        <div><i class="dot gray"></i> 수온값 없음 또는 한계수온 없음</div>
       </div>
       <div id="list" class="list"></div>
     </aside>
@@ -76,15 +76,16 @@
         <tbody id="provinceSpeciesTable"></tbody>
       </table>
     </div>
-    <p class="note">현재 적용수온 평균은 각 양식장에 가장 가까운 NIFS 관측소의 이용 가능한 표층수온을 연결한 뒤 평균한 값입니다. 오래된 관측값도 값이 존재하면 사용하며 관측시각을 함께 확인할 수 있습니다. 표의 행을 클릭하면 해당 시도·품종으로 양식장 지도가 필터링됩니다.</p>
+    <p class="note">현재 적용수온 평균은 각 양식장에 가장 가까운 통합 수온관측소의 이용 가능한 표층수온을 연결한 뒤 평균한 값입니다. 오래된 관측값도 값이 존재하면 사용하며 관측시각을 함께 확인할 수 있습니다. 표의 행을 클릭하면 해당 시도·품종으로 양식장 지도가 필터링됩니다.</p>
   </div>
 </section>
 
 <section id="stationsView" class="view">
   <div class="station-dashboard">
     <aside class="station-list-panel">
-      <div class="panel-head"><div><h2>NIFS 수온관측망</h2><p class="sub">표층수온 관측소 위치와 최신 관측상태</p></div><span id="stationCount">-</span></div>
+      <div class="panel-head"><div><h2>통합 수온관측망</h2><p class="sub">NIFS 통합망의 표층수온 관측소 위치와 최신 관측상태</p></div><span id="stationCount">-</span></div>
       <div class="station-summary" id="stationSummary"></div>
+      <div class="station-filters"><select id="stationOrg"><option value="">전체 운영기관</option></select><select id="stationSea"><option value="">전체 해역</option></select><input id="stationSearch" type="search" placeholder="관측소 검색"></div>
       <div class="station-list" id="stationList"></div>
     </aside>
     <div id="stationMap"></div>
@@ -115,13 +116,13 @@
     <h2>데이터 구성</h2>
     <div class="cards">
       <div class="info-card"><b>면허정보</b><span>업로드한 Excel의 면허정보·좌표정보를 사용합니다.</span></div>
-      <div class="info-card"><b>실시간 수온</b><span>국립수산과학원 실시간 해양수산환경 관측시스템의 관측자료를 사용합니다.</span></div>
-      <div class="info-card"><b>매칭 방법</b><span>각 양식장 좌표와 가장 가까운 NIFS 관측소의 표층 수온을 연결하고 관측소까지 거리를 표시합니다.</span></div>
+      <div class="info-card"><b>실시간 수온</b><span>국립수산과학원 실시간 해양수산환경 관측시스템의 통합 관측자료를 사용합니다. NIFS 자체 관측망과 연계기관 관측망이 함께 포함됩니다.</span></div>
+      <div class="info-card"><b>매칭 방법</b><span>각 양식장 좌표와 가장 가까운 통합 관측망 관측소의 이용 가능한 표층수온을 연결하고 관측소·운영기관·관측거리·실제 관측시각을 표시합니다.</span></div>
       <div class="info-card"><b>신호등</b><span>운영 화면용 임시 규칙: 한계 초과=빨강, 한계까지 2℃ 이내=노랑, 그 외=녹색입니다. 관측값이 존재하면 관측시각과 관계없이 가장 가까운 관측소 값을 사용합니다. 한계수온이 없는 품종은 회색으로 표시합니다. 이 규칙은 공식 경보 기준이 아니며 조정 가능합니다.</span></div>
     </div>
     <div class="api-box">
       <b>실시간 API 업데이트</b>
-      <p>GitHub Actions가 NIFS API를 주기적으로 조회하여 <code>data/risa-latest.json</code>을 갱신하도록 구성합니다. API 인증키는 공개 코드에 넣지 않고 GitHub Actions Secret에 저장합니다.</p>
+      <p>GitHub Actions가 NIFS 통합 수온관측망을 주기적으로 조회하여 <code>data/risa-latest.json</code>을 갱신하도록 구성합니다. API 인증키는 공개 코드에 넣지 않고 GitHub Actions Secret에 저장합니다.</p>
     </div>
   </div>
 </section>
