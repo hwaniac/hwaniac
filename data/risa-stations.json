@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "NIFS integrated observation network",
-    "generatedAtUTC": "2026-09-21T02:14:18.536195+00:00",
+    "generatedAtUTC": "2026-09-21T02:42:29.649124+00:00",
     "layer": "surface",
     "stationCount": 210,
     "stationsWithCoordinates": 210,
@@ -2687,7 +2687,7 @@
       "middleTempAvailable": false,
       "bottomTempAvailable": false,
       "underInspection": "N",
-      "dataType": "F"
+      "dataType": "T"
     },
     {
       "stationCode": "fjh5a",
