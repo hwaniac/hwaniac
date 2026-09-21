@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "NIFS integrated observation network",
-    "generatedAtUTC": "2026-09-21T07:43:55.351520+00:00",
+    "generatedAtUTC": "2026-09-21T08:16:05.846271+00:00",
     "layer": "surface",
     "stationCount": 210,
     "stationsWithCoordinates": 210,
@@ -71,8 +71,8 @@
       "lat": 34.7694,
       "lon": 128.5519,
       "surfaceTempAvailable": true,
-      "middleTempAvailable": true,
-      "bottomTempAvailable": true,
+      "middleTempAvailable": false,
+      "bottomTempAvailable": false,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -123,8 +123,8 @@
       "lat": 34.8081,
       "lon": 128.5118,
       "surfaceTempAvailable": true,
-      "middleTempAvailable": true,
-      "bottomTempAvailable": true,
+      "middleTempAvailable": false,
+      "bottomTempAvailable": false,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -526,8 +526,8 @@
       "lat": 34.936,
       "lon": 127.8608,
       "surfaceTempAvailable": true,
-      "middleTempAvailable": true,
-      "bottomTempAvailable": true,
+      "middleTempAvailable": false,
+      "bottomTempAvailable": false,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -539,8 +539,8 @@
       "lat": 34.8972,
       "lon": 128.0403,
       "surfaceTempAvailable": true,
-      "middleTempAvailable": true,
-      "bottomTempAvailable": true,
+      "middleTempAvailable": false,
+      "bottomTempAvailable": false,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -747,8 +747,8 @@
       "lat": 34.9649547,
       "lon": 127.9960686,
       "surfaceTempAvailable": true,
-      "middleTempAvailable": true,
-      "bottomTempAvailable": true,
+      "middleTempAvailable": false,
+      "bottomTempAvailable": false,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -760,8 +760,8 @@
       "lat": 34.9640095,
       "lon": 127.9965293,
       "surfaceTempAvailable": true,
-      "middleTempAvailable": true,
-      "bottomTempAvailable": true,
+      "middleTempAvailable": false,
+      "bottomTempAvailable": false,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -773,8 +773,8 @@
       "lat": 34.9641293,
       "lon": 127.995612,
       "surfaceTempAvailable": true,
-      "middleTempAvailable": true,
-      "bottomTempAvailable": true,
+      "middleTempAvailable": false,
+      "bottomTempAvailable": false,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -786,8 +786,8 @@
       "lat": 34.9700033,
       "lon": 128.001078,
       "surfaceTempAvailable": true,
-      "middleTempAvailable": true,
-      "bottomTempAvailable": true,
+      "middleTempAvailable": false,
+      "bottomTempAvailable": false,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -799,8 +799,8 @@
       "lat": 34.9656331,
       "lon": 128.0001761,
       "surfaceTempAvailable": true,
-      "middleTempAvailable": true,
-      "bottomTempAvailable": true,
+      "middleTempAvailable": false,
+      "bottomTempAvailable": false,
       "underInspection": "N",
       "dataType": "T"
     },
