@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "NIFS integrated observation network",
-    "generatedAtUTC": "2026-09-23T04:42:32.085468+00:00",
+    "generatedAtUTC": "2026-09-23T05:13:14.428794+00:00",
     "layer": "surface",
     "stationCount": 210,
     "stationsWithCoordinates": 210,
@@ -802,7 +802,7 @@
       "middleTempAvailable": true,
       "bottomTempAvailable": true,
       "underInspection": "N",
-      "dataType": "T"
+      "dataType": "F"
     },
     {
       "stationCode": "bsc87",
@@ -2438,9 +2438,9 @@
       "lon": 128.4178,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": false,
+      "bottomTempAvailable": true,
       "underInspection": "N",
-      "dataType": "F"
+      "dataType": "T"
     },
     {
       "stationCode": "ftlq5",
