@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "NIFS integrated observation network",
-    "generatedAtUTC": "2026-09-23T20:16:03.193631+00:00",
+    "generatedAtUTC": "2026-09-23T20:41:01.246733+00:00",
     "layer": "surface",
     "stationCount": 210,
     "stationsWithCoordinates": 210,
@@ -124,7 +124,7 @@
       "lon": 128.5118,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": false,
+      "bottomTempAvailable": true,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -527,7 +527,7 @@
       "lon": 127.8608,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": false,
+      "bottomTempAvailable": true,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -540,7 +540,7 @@
       "lon": 128.0403,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": false,
+      "bottomTempAvailable": true,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -748,7 +748,7 @@
       "lon": 127.9960686,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": false,
+      "bottomTempAvailable": true,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -774,7 +774,7 @@
       "lon": 127.995612,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": false,
+      "bottomTempAvailable": true,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -787,7 +787,7 @@
       "lon": 128.001078,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": false,
+      "bottomTempAvailable": true,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -2282,7 +2282,7 @@
       "lon": 128.388,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": false,
+      "bottomTempAvailable": true,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -2411,8 +2411,8 @@
       "lat": 34.8742,
       "lon": 128.351,
       "surfaceTempAvailable": true,
-      "middleTempAvailable": false,
-      "bottomTempAvailable": false,
+      "middleTempAvailable": true,
+      "bottomTempAvailable": true,
       "underInspection": "N",
       "dataType": "T"
     },
