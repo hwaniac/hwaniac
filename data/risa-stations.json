@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "NIFS integrated observation network",
-    "generatedAtUTC": "2026-09-28T12:19:49.161965+00:00",
+    "generatedAtUTC": "2026-09-28T12:49:49.005870+00:00",
     "layer": "surface",
     "stationCount": 210,
     "stationsWithCoordinates": 210,
@@ -2412,7 +2412,7 @@
       "lon": 128.351,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": false,
+      "bottomTempAvailable": true,
       "underInspection": "N",
       "dataType": "T"
     },
