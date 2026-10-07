@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "NIFS integrated observation network",
-    "generatedAtUTC": "2026-10-07T11:15:24.254617+00:00",
+    "generatedAtUTC": "2026-10-07T11:45:45.937378+00:00",
     "layer": "surface",
     "stationCount": 210,
     "stationsWithCoordinates": 210,
@@ -1647,7 +1647,7 @@
       "middleTempAvailable": false,
       "bottomTempAvailable": false,
       "underInspection": "N",
-      "dataType": "F"
+      "dataType": "T"
     },
     {
       "stationCode": "fwyl6",
@@ -2451,7 +2451,7 @@
       "lon": 128.4178,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": false,
+      "bottomTempAvailable": true,
       "underInspection": "N",
       "dataType": "T"
     },
