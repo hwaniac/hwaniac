@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "NIFS integrated observation network",
-    "generatedAtUTC": "2026-10-25T23:06:11.749138+00:00",
+    "generatedAtUTC": "2026-10-26T01:31:43.102698+00:00",
     "layer": "surface",
     "stationCount": 210,
     "stationsWithCoordinates": 210,
@@ -1036,7 +1036,7 @@
       "middleTempAvailable": false,
       "bottomTempAvailable": false,
       "underInspection": "N",
-      "dataType": "F"
+      "dataType": "T"
     },
     {
       "stationCode": "fshj7",
@@ -2191,7 +2191,7 @@
       "lon": 128.3719,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": true,
+      "bottomTempAvailable": false,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -2284,7 +2284,7 @@
       "middleTempAvailable": true,
       "bottomTempAvailable": true,
       "underInspection": "N",
-      "dataType": "F"
+      "dataType": "T"
     },
     {
       "stationCode": "fttp7",
@@ -2401,7 +2401,7 @@
       "middleTempAvailable": true,
       "bottomTempAvailable": true,
       "underInspection": "N",
-      "dataType": "F"
+      "dataType": "T"
     },
     {
       "stationCode": "fthq5",
