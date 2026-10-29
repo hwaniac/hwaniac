@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "NIFS integrated observation network",
-    "generatedAtUTC": "2026-10-28T21:51:23.676467+00:00",
+    "generatedAtUTC": "2026-10-29T01:38:58.253086+00:00",
     "layer": "surface",
     "stationCount": 210,
     "stationsWithCoordinates": 210,
@@ -2284,7 +2284,7 @@
       "middleTempAvailable": false,
       "bottomTempAvailable": false,
       "underInspection": "N",
-      "dataType": "T"
+      "dataType": "F"
     },
     {
       "stationCode": "fttp7",
