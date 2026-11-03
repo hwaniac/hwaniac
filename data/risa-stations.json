@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "NIFS integrated observation network",
-    "generatedAtUTC": "2026-11-03T11:44:16.949686+00:00",
+    "generatedAtUTC": "2026-11-03T19:17:00.001606+00:00",
     "layer": "surface",
     "stationCount": 210,
     "stationsWithCoordinates": 210,
@@ -774,7 +774,7 @@
       "lon": 127.995612,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": false,
+      "bottomTempAvailable": true,
       "underInspection": "N",
       "dataType": "T"
     },
@@ -1894,7 +1894,7 @@
       "middleTempAvailable": false,
       "bottomTempAvailable": false,
       "underInspection": "N",
-      "dataType": "T"
+      "dataType": "F"
     },
     {
       "stationCode": "bjui5",
