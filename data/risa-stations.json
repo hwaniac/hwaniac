@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "NIFS integrated observation network",
-    "generatedAtUTC": "2026-11-14T06:54:26.540447+00:00",
+    "generatedAtUTC": "2026-11-14T13:59:55.806777+00:00",
     "layer": "surface",
     "stationCount": 210,
     "stationsWithCoordinates": 210,
@@ -2583,7 +2583,7 @@
       "middleTempAvailable": false,
       "bottomTempAvailable": false,
       "underInspection": "Y",
-      "dataType": "T"
+      "dataType": "F"
     },
     {
       "stationCode": "fhml6",
