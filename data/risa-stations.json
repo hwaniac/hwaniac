@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "NIFS integrated observation network",
-    "generatedAtUTC": "2026-11-25T02:43:39.185859+00:00",
+    "generatedAtUTC": "2026-11-25T12:21:18.828409+00:00",
     "layer": "surface",
     "stationCount": 210,
     "stationsWithCoordinates": 210,
@@ -1036,7 +1036,7 @@
       "middleTempAvailable": false,
       "bottomTempAvailable": false,
       "underInspection": "N",
-      "dataType": "F"
+      "dataType": "T"
     },
     {
       "stationCode": "fshj7",
@@ -2282,7 +2282,7 @@
       "lon": 128.388,
       "surfaceTempAvailable": true,
       "middleTempAvailable": true,
-      "bottomTempAvailable": true,
+      "bottomTempAvailable": false,
       "underInspection": "N",
       "dataType": "T"
     },
